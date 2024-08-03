@@ -1,0 +1,52 @@
+.login{
+    align-content: center;
+  
+    align-items: center;
+  }
+  .form{max-width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+     border-radius: 10px;
+      border: 2px solid black;
+      box-shadow: 0 0 10px rgb(6, 136, 129,0.5);
+  }
+  h1{
+    color: rgb(6, 136, 129);
+  }
+  h3{
+    color: white;
+  }
+  .txt{
+    color: white;
+  }
+  input{
+      width:50%;
+      padding:10px;
+      border: 1px solid grey;
+      border-radius:10px;
+  }
+  .send,.submit{
+    color: black;
+  }
+  .button1{
+      padding: 10px;
+  }
+  button{
+      background-color:rgb(8, 139, 139,0.5);
+      height:35px;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  button:hover{
+      background-color:rgb(8, 139, 139);
+  }
+  span:hover{
+      text-decoration: underline;
+      cursor: pointer;
+      color: rgb(8, 139, 139);
+  }
+  
+  

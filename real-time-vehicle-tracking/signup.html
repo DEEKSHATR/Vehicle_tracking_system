@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:url(Screenshot\ \(13\).png);
+            background-size: cover; /* or background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center
+        }
+        </style>
+    <div class="form">
+        <div class="signup">
+            <h1>Sign In!!</h1>
+        </div>
+        <div class="container">
+            <h3>Name:</h3>
+            <input type="Email" placeholder="Enter Name"required>
+        <h3 class="phone number">Phone Number:</h3>
+        <input type="text" placeholder="Enter phone number"required>
+        <h3 class="Email">Email:</h3>
+        <input type="text" placeholder="Enter Email"required>
+        <h3>Gender:</h3>
+        <div class="form-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+    </div>
+        <div class="password">
+            <h3>Create Password:</h3>
+            <input type="password" placeholder="Create password" required>
+        </div>
+        <div class="password">
+            <h3>Re-Enter Password:</h3>
+            <input type="password" placeholder="Enter password" required>
+        </div>
+        <div class="button1">
+            <button  onclick="openpage()" id="open">submit</button>
+        </div>
+        <div class="login">
+            <h4>Already have an account?<span onclick="display()" id="btn">Log In</span> 
+            </h4>
+        </div>
+    </div>
+        </div>
+    
+</body>
+</html>
+<script>
+    let ele=document.getElementById('btn');
+    function display()
+    {
+        window.location.href='index.html';
+    }
+    let elem=document.getElementById('open');
+    function openpage()
+    {
+        window.location.href='open.html';
+    }
+</script>

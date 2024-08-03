@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="otp.css">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:url(Screenshot\ \(13\).png);
+            background-size: cover; /* or background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center
+        }
+    </style>
+   <div class="form">
+    <h1 class="login" >Forgot Password</h1>
+    <div class="container">
+        <h3>Email or Phone number:</h3>
+        <input type="Email" placeholder="Enter Email or Phone no" required>
+    <div class="button1">
+        <button class="send">Send OTP</button>
+    </div>
+    <div>
+        <h3 class="password">Enter OTP:</h3>
+    <input type="password" placeholder="Enter OTP" required>
+    </div>
+    <br>
+    <div>
+        <button class="submit">Submit</button>
+    </div>
+    <br>
+    <div class="txt">Remember Password?<span onclick="display()" id="btn">Log In</span></div>
+</div>
+    </div>
+</body>
+</html>
+<script>
+    let ele=document.getElementById('btn');
+    function display()
+    {
+        window.location.href='ha.html';
+    }
+</script>

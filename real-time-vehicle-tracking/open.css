@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border: 4px solid black;
+}
+.main{
+    margin:10px;
+    background-color: rgb(119, 194, 188,0.5);
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav{
+      display: flex;
+}
+p{
+    color: white;
+}
+
+img{
+     width:50px;
+     height:50px;
+     margin:6px;
+}
+.welcome{
+    padding: 24px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(3, 146, 151);
+
+}
+.stop,.alert{
+    background-color: rgb(119, 194, 188,0.5);
+    padding-left: 10px;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+}
+.stop:hover,.alert:hover{
+    cursor: pointer;
+    background-color: rgb(119, 194, 188);
+}
+.search{
+    display: flex;
+    text-align: center;
+    align-items:center;
+    font-size: larger;
+    justify-content: center;
+}
+.emer{
+    text-align: center;
+   padding-left:10px;
+    width: auto;
+    height: 80px;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.emer{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width:10%;
+border-radius: 10px;
+    padding: 15px;
+}
+.emergency{
+    text-align: center;
+}
+.track{
+    margin-right: 65%;
+}
+.details{
+    text-align: center;
+}
+.stop:hover{
+    cursor: pointer;
+    background-color: rgb(119, 194, 188,0.5);
+}
+.alert:hover{
+    cursor: pointer;
+    background-color:rgb(119, 194, 188,0.5);
+}
+.emer:hover{
+    cursor:pointer;
+    background-color: red;
+}
+h4{
+    color: white;
+}
+/* Tooltip container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tooltip text */
+.image::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -20px; /* Adjust the tooltip position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.image-container:hover .image::after {
+    opacity: 1;
+}

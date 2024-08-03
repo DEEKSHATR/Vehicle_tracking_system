@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    margin:0;
+    padding-bottom:250px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    
+}
+.track{
+    margin-right: 60%;
+}
+.main{
+    margin:10px;
+    background-color: rgb(119, 194, 188,0.5);
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    height:70px;
+}
+img{
+    width:40px;
+    height:40px;
+    margin:6px;
+}
+a{
+    color: black;
+    text-align: center;
+    margin:5px;
+}
+a:hover{
+    color: white;
+}
+.navi{
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}

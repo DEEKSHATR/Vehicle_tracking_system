@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buses.css">
+    <title>Buses</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:url(Screenshot\ \(13\).png);
+            background-size: cover; /* or background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center
+        }
+    </style>
+    <div class="main">
+        <img src="bus.png">
+        <h2 class="track">Travel_Easy</h2>
+        <nav class="navi">
+        <a href="#" onclick="display()" id="btn">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        </nav>
+        <img src="share.png">
+    </div>
+    <hr>
+    <h2 class="hd">Available Buses</h2>
+    <hr>
+    <div class="place">
+        <h2>Manali</h2>
+        <img src="arrow-right.png" class="arrow">
+        <h2>Shimla</h2>
+    </div>
+    <hr>
+    <div class="bus1">
+        <button>
+            <h3 onclick="views()" id="bbb">HIMSUTRA</h3>
+            <h4>12:10 PM</h4>
+
+        </button>
+    </div>
+    <div class="bus2">
+        <button>
+            <h3 onclick="openpage()" id="page">HIMGAURAV</h3>
+            <h4>2:00 PM</h4>
+
+        </button>
+    </div>
+
+
+</body>
+</html>
+<script>
+    let ele=document.getElementById('btn');
+    function display()
+    {
+        window.location.href='open.html';
+    }
+    let elet=document.getElementById('bbb');
+    function views()
+    {
+        window.location.href='bus1.html';
+    }
+    let elem=document.getElementById('page');
+    function openpage()
+    {
+        window.location.href='bus2.html';
+    }
+</script>

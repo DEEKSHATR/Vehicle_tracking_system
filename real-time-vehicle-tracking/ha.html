@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="vehicle.css">
+    <title>Log in</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:url(Screenshot\ \(13\).png);
+            background-size: cover; /* or background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center
+        }
+    </style>
+   <div class="form">
+    <h1 class="login" >LOG IN</h1>
+    <form class="container">
+        <h3>Email or Phone number:</h3>
+        <input type="Email" placeholder="Enter Email or Phone no" name="Email" required>
+    <h3 class="password">Password:</h3>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <div class="button1">
+        <button onclick="openpage()" id="open">submit</button>
+
+    </div>
+    <div class="forget">
+        <span class="otp" onclick="otppage()" id="otp">Forgot Password?</span>
+    </div>
+    <br>
+    <div class="txt">Don't have an account?<span onclick="display()" id="btn">Sign-up</span></div>
+</form>
+</div>
+</body>
+</html>
+<script>
+    let ele=document.getElementById('btn');
+    function display()
+    {
+        window.location.href='signup.html';
+    }
+    let elem=document.getElementById('open');
+    function openpage()
+    {
+        window.location.href='open.html';
+    }
+    let elems=document.getElementById('otp');
+    function otppage()
+    {
+        window.location.href='otp.html';
+    }
+    
+</script>
